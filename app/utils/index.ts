@@ -1,5 +1,6 @@
 export const getAssetsPath = (path: string): string => {
-  const basePath = useAppConfig().baseURL || '/';
+  const config = useRuntimeConfig();
+  const basePath = config.app.baseURL || '/';
   return `${basePath}${path}`;
 }
 
