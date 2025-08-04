@@ -15,6 +15,7 @@ export default defineNuxtConfig({
     logLevel: 'error'
   },
   app: {
+    baseURL: process.env.production ? '/home-massage-danang/' : '/',
     head: {
       title: 'Nuxt 3 Tailwind CSS Example',
       meta: [

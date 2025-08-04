@@ -2,12 +2,12 @@
   <header id="header" class="h-screen flex flex-col justify-between bg-cover bg-center ">
     <nav class="container flex justify-between px-4 items-center">
       <a href="#" class="block">
-        <img src="/images/logo-white.png" alt="Massage Đà Nẵng Logo" class="h-12" width="169" height="48">
+        <img :src="getImagePath('logo-white.png')" alt="Massage Đà Nẵng Logo" class="h-12" width="169" height="48">
       </a>
 
       <div>
         <button aria-label="Change Language">
-          <img :src="`/flags/vi.svg`" alt="Vi" width="32" height="32">
+          <img :src="getFlagPath('vi.svg')" alt="Vi" width="32" height="32">
         </button>
       </div>
     </nav>
@@ -20,7 +20,7 @@
       </div>
 
       <div>
-        <img src="/images/hero.png" alt="Hình ảnh Massage" width="736" height="736" class="">
+        <img :src="getImagePath('hero.png')" alt="Hình ảnh Massage" width="736" height="736" class="">
       </div>
     </section>
   </header>
@@ -34,7 +34,7 @@
         
         <div class="grid grid-cols-1 md:grid-cols-3 items-center justify-center gap-8">
           <div class="bg-white rounded-lg shadow text-center">
-            <img src="/images/service-body.jpg" alt="Dịch vụ 1" class="rounded-t-lg">
+            <img :src="getImagePath('service-body.jpg')" alt="Dịch vụ 1" class="rounded-t-lg">
             <div class="p-5">
               <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary">Massage toàn thân</h5>
               <p>Liệu pháp massage toàn thân giúp giảm căng thẳng, cải thiện tuần hoàn máu và mang lại cảm giác thư giãn sâu.</p>
@@ -42,7 +42,7 @@
           </div>
 
           <div class="bg-white rounded-lg shadow text-center">
-            <img src="/images/service-body.jpg" alt="Dịch vụ 1" class="rounded-t-lg">
+            <img :src="getImagePath('service-body.jpg')" alt="Dịch vụ 1" class="rounded-t-lg">
             <div class="p-5">
               <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary">Massage toàn thân</h5>
               <p>Liệu pháp massage toàn thân giúp giảm căng thẳng, cải thiện tuần hoàn máu và mang lại cảm giác thư giãn sâu.</p>
@@ -50,7 +50,7 @@
           </div>
 
           <div class="bg-white rounded-lg shadow text-center">
-            <img src="/images/service-body.jpg" alt="Dịch vụ 1" class="rounded-t-lg">
+            <img :src="getImagePath('service-body.jpg')" alt="Dịch vụ 1" class="rounded-t-lg">
             <div class="p-5">
               <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary">Massage toàn thân</h5>
               <p>Liệu pháp massage toàn thân giúp giảm căng thẳng, cải thiện tuần hoàn máu và mang lại cảm giác thư giãn sâu.</p>
@@ -95,7 +95,7 @@
           <p class="text-center">Liên hệ với chúng tôi để được tư vấn và đặt lịch hẹn.</p>
         </div>
         <img
-          src="/images/about-us.jpg" alt="Về Chúng Tôi" width="736" height="617"
+          :src="getImagePath('about-us.jpg')" alt="Về Chúng Tôi" width="736" height="617"
           class="rounded-xl shadow-lg w-full h-auto object-cover"
         >
       </div>
@@ -149,7 +149,7 @@
       <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto px-4">
         <div class="flex flex-col items-center md:items-start mb-10">
           <img
-            src="/images/logo-white.png" alt="Massage Đà Nẵng Logo" width="169" height="48"
+            :src="getImagePath('logo-white.png')" alt="Massage Đà Nẵng Logo" width="169" height="48"
             class=""
           >
           <p class="">© 2023 HomeMassageDanang. All rights reserved.</p>
@@ -159,16 +159,16 @@
           <p class="mb-4">Liên hệ:</p>
           <div class="flex justify-center md:justify-end space-x-6">
             <a href="#" class="text-white hover:text-gray-400">
-              <img src="/logos/facebook.svg" alt="Facebook" width="24" height="24">
+              <img :src="getLogoPath('facebook.svg')" alt="Facebook" width="24" height="24">
             </a>
             <a href="#" class="text-white hover:text-gray-400">
-              <img src="/logos/kakaotalk.svg" alt="Instagram" width="24" height="24">
+              <img :src="getLogoPath('kakaotalk.svg')" alt="Instagram" width="24" height="24">
             </a>
             <a href="#" class="text-white hover:text-gray-400">
-              <img src="/logos/phone.svg" alt="Twitter" width="24" height="24">
+              <img :src="getLogoPath('phone.svg')" alt="Twitter" width="24" height="24">
             </a>
             <a href="#" class="text-white hover:text-gray-400">
-              <img src="/logos/wechat.svg" alt="YouTube" width="24" height="24">
+              <img :src="getLogoPath('wechat.svg')" alt="YouTube" width="24" height="24">
             </a>
           </div>
         </div>
