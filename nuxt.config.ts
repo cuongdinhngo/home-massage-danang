@@ -11,11 +11,14 @@ export default defineNuxtConfig({
   experimental: {
     payloadExtraction: false
   },
+  nitro: {
+    preset: 'github_pages'
+  },
   vite: {
     logLevel: 'error'
   },
   app: {
-    baseURL: process.env.production ? '/home-massage-danang/' : '/',
+    baseURL: process.env.NODE_ENV === 'production' ? '/home-massage-danang/' : '/',
     head: {
       title: 'Nuxt 3 Tailwind CSS Example',
       meta: [
