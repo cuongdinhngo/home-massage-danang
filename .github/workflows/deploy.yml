@@ -17,6 +17,8 @@ jobs:
       # Install dependencies and build
       - run: bun install
       - run: bun run generate
+        env:
+          NODE_ENV: production
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
