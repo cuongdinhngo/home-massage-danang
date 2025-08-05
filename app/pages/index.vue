@@ -1,14 +1,32 @@
 <template>
   <header id="header" class="h-screen flex flex-col justify-between bg-cover bg-center ">
-    <nav class="container flex justify-between px-4 items-center">
+     <nav class="container mx-auto px-4 flex justify-between items-center">
       <a href="#" class="block">
         <img :src="getImagePath('logo-white.png')" alt="Massage Đà Nẵng Logo" class="h-12" width="169" height="48">
       </a>
 
-      <div>
-        <button aria-label="Change Language">
+      <div class="relative">
+        <button
+          @click="state.showLocales = !state.showLocales"
+          aria-label="Change Language"
+        >
           <img :src="getFlagPath('vi.svg')" alt="Vi" width="32" height="32">
         </button>
+
+        <Transition name="locale-menu">
+          <div
+            v-if="state.showLocales"
+            class="absolute right-0 flex space-x-2 px-2 bg-white shadow rounded-lg"
+          >
+            <button class=" w-8 h-8 ">
+              <img src="/flags/en.svg" width="32" height="32"/>
+            </button>
+            <button class=" w-8 h-8 ">
+              <img src="/flags/en.svg" width="32" height="32"/>
+            </button>
+          </div>
+        </Transition>
+
       </div>
     </nav>
 
@@ -19,7 +37,7 @@
         <a href="#" class="bg-primary font-bold py-5 px-10 rounded-lg">Xem Dịch Vụ</a>
       </div>
 
-      <div>
+      <div class="flex justify-center md:justify-end">
         <img :src="getImagePath('hero.png')" alt="Hình ảnh Massage" width="736" height="736" class="">
       </div>
     </section>
@@ -33,7 +51,7 @@
         <p class="mt-4 mb-16 text-center">Chúng tôi cung cấp các liệu trình đa dạng, phù hợp với mọi nhu cầu thư giãn và trị liệu của bạn.</p>
         
         <div class="grid grid-cols-1 md:grid-cols-3 items-center justify-center gap-8">
-          <div class="bg-white rounded-lg shadow text-center">
+          <div class="bg-white rounded-lg shadow text-center hover:shadow-lg hover:scale-105 transition duration-400">
             <img :src="getImagePath('service-body.jpg')" alt="Dịch vụ 1" class="rounded-t-lg">
             <div class="p-5">
               <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary">Massage toàn thân</h5>
@@ -67,11 +85,15 @@
         <p class="mt-4 mb-16 text-center">Các gói dịch vụ được thiết kế linh hoạt, đảm bảo chất lượng với chi phí hợp lý nhất.</p>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
-          <div class="bg-white rounded-lg shadow text-center">
+          <div class="bg-white rounded-lg shadow text-center hover:shadow-lg hover:scale-105 transition duration-400">
             <div class="p-5">
               <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary">Gói Cơ Bản</h5>
-              <p class="text-xl font-semibold mb-4">500.000 VNĐ</p>
-              <p>Massage toàn thân 60 phút, bao gồm dầu massage tự nhiên.</p>
+              <ul>
+                <li class="flex justify-between items-center mb-2">
+                  <span>60 phút</span>
+                  <span class="font-semibold">500k</span>
+                </li>
+              </ul>
             </div>
           </div>
 
@@ -176,16 +198,35 @@
     </footer>
   </main>
 </template>
+<script setup lang="ts">
+const state = reactive({
+  showLocales: false
+});
+</script>
 <style>
-  #header {
-    background-image: linear-gradient(to right, rgba(105, 67, 41, 0.7), rgba(105, 67, 41, 0.95)), url('/images/hero-bg.png');
-    background-size: cover;
-    background-position: center;
-  }
+#header {
+  background-image: linear-gradient(to right, rgba(105, 67, 41, 0.7), rgba(105, 67, 41, 0.95)), url('/images/hero-bg.png');
+  background-size: cover;
+  background-position: center;
+}
 
-  #aboutUs {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0)), url('/images/about-us-bg.jpg');
-    background-size: cover;
-    background-position: center;
-  }
+#aboutUs {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0)), url('/images/about-us-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.locale-menu-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.locale-menu-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.locale-menu-enter-from,
+.locale-menu-leave-to {
+  transform: translateX(20px);
+  opacity: 0;
+}
 </style>
