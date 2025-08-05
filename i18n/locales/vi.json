@@ -1,0 +1,98 @@
+{
+  "banner_title": "Massage Đà Nẵng",
+  "banner_description": "Trải nghiệm dịch vụ massage tại nhà chuyên nghiệp và thư giãn.",
+  "book_now": "Đặt lịch",
+  "services": {
+    "title": "Dịch Vụ",
+    "description": "Chúng tôi cung cấp các gói dịch vụ massage chuyên nghiệp tại nhà.",
+    "list": [
+      {
+        "title": "Massage toàn thân",
+        "description": "Liệu pháp massage toàn thân giúp giảm căng thẳng, cải thiện tuần hoàn máu và mang lại cảm giác thư giãn sâu.",
+        "image": "service-body.jpg"
+      },
+      {
+        "title": "Massage đá nóng",
+        "description": "Sử dụng đá nóng để làm dịu cơ bắp căng thẳng, cải thiện tuần hoàn máu và mang lại cảm giác thư giãn sâu.",
+        "image": "service-hot-stones.jpg"
+      },
+      {
+        "title": "Massage tinh dầu",
+        "description": "Sử dụng tinh dầu tự nhiên để làm dịu tâm trí, giảm căng thẳng và mang lại cảm giác thư giãn sâu.",
+        "image": "service-cupping.jpg"
+      }
+    ]
+  },
+  "prices": {
+    "title": "Chi Phí Dịch Vụ",
+    "description": "Các gói dịch vụ được thiết kế linh hoạt, đảm bảo chất lượng với chi phí hợp lý nhất.",
+    "list": [
+      {
+        "name": "Gói Cơ Bản",
+        "items": [
+          {
+            "duration": "60 phút",
+            "price": "350.000 VNĐ"
+          },
+          {
+            "duration": "90 phút",
+            "price": "500.000 VNĐ"
+          },
+          {
+            "duration": "120 phút",
+            "price": "650.000 VNĐ"
+          },
+          {
+            "duration": "Thêm đá nóng",
+            "price": "+50.000 VNĐ"
+          },
+          {
+            "duration": "Thêm tinh dầu",
+            "price": "+50.000 VNĐ"
+          }
+        ]
+      },
+      {
+        "name": "Gói Cao Cấp",
+        "items": [
+          {
+            "duration": "90 phút",
+            "price": "500.000 VNĐ"
+          },
+          {
+            "duration": "120 phút",
+            "price": "800.000 VNĐ"
+          }
+        ],
+        "note": "Bao gồm các dịch vụ massage chuyên sâu hơn, sử dụng dầu massage tự nhiên và tinh dầu thư giãn."
+      }
+    ]
+  },
+  "about": {
+    "title": "Về Chúng Tôi",
+    "description": "Chúng tôi là đội ngũ chuyên nghiệp với nhiều năm kinh nghiệm trong lĩnh vực massage tại nhà. Chúng tôi cam kết mang đến cho bạn trải nghiệm thư giãn và phục hồi sức khỏe tốt nhất.",
+    "mission": "Sứ mệnh của chúng tôi là mang đến dịch vụ massage tại nhà chất lượng cao, giúp khách hàng thư giãn và phục hồi sức khỏe sau những ngày làm việc căng thẳng."
+  },
+  "feedbacks": {
+    "title": "Phản Hồi Khách Hàng",
+    "description": "Chúng tôi luôn lắng nghe ý kiến của khách hàng để cải thiện dịch vụ.",
+    "testimonials": [
+      {
+        "name": "Nguyễn Văn A",
+        "from": "Hà Nội",
+        "feedback": "Dịch vụ tuyệt vời, nhân viên chuyên nghiệp và thân thiện."
+      },
+      {
+        "name": "Trần Thị B",
+        "from": "Đà Nẵng",
+        "feedback": "Tôi rất hài lòng với gói massage cơ bản, cảm thấy thư giãn hơn bao giờ hết."
+      },
+      {
+        "name": "Lê Văn C",
+        "from": "TP. Hồ Chí Minh",
+        "feedback": "Gói cao cấp thật sự đáng giá, tôi sẽ quay lại lần nữa."
+      }
+    ]
+  },
+  "contact": "Liên hệ đặt lịch"
+}

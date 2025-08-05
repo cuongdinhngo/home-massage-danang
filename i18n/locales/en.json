@@ -1,0 +1,98 @@
+{
+  "banner_title": "Da Nang Massage",
+  "banner_description": "Experience professional and relaxing home massage services.",
+  "book_now": "Book Now",
+  "services": {
+    "title": "Services",
+    "description": "We offer professional home massage service packages.",
+    "list": [
+      {
+        "title": "Full Body Massage",
+        "description": "Full body massage therapy helps reduce stress, improve circulation, and provide deep relaxation.",
+        "image": "service-body.jpg"
+      },
+      {
+        "title": "Hot Stone Massage",
+        "description": "Hot stones help soothe tense muscles, improve circulation, and bring deep relaxation.",
+        "image": "service-hot-stones.jpg"
+      },
+      {
+        "title": "Aromatherapy Massage",
+        "description": "Natural essential oils are used to calm the mind, relieve stress, and promote deep relaxation.",
+        "image": "service-cupping.jpg"
+      }
+    ]
+  },
+  "prices": {
+    "title": "Service Pricing",
+    "description": "Flexible service packages with guaranteed quality at the most reasonable cost.",
+    "list": [
+      {
+        "name": "Basic Package",
+        "items": [
+          {
+            "duration": "60 minutes",
+            "price": "350,000 VND"
+          },
+          {
+            "duration": "90 minutes",
+            "price": "500,000 VND"
+          },
+          {
+            "duration": "120 minutes",
+            "price": "650,000 VND"
+          },
+          {
+            "duration": "Add Hot Stone",
+            "price": "+50,000 VND"
+          },
+          {
+            "duration": "Add Essential Oil",
+            "price": "+50,000 VND"
+          }
+        ]
+      },
+      {
+        "name": "Premium Package",
+        "items": [
+          {
+            "duration": "90 minutes",
+            "price": "500,000 VND"
+          },
+          {
+            "duration": "120 minutes",
+            "price": "800,000 VND"
+          }
+        ],
+        "note": "Includes advanced massage services using natural oils and relaxing essential oils."
+      }
+    ]
+  },
+  "about": {
+    "title": "About Us",
+    "description": "We are a professional team with years of experience in home massage services. We are committed to providing you with the best relaxation and health recovery experience.",
+    "mission": "Our mission is to provide high-quality home massage services, helping clients relax and recover after stressful working days."
+  },
+  "feedbacks": {
+    "title": "Customer Feedback",
+    "description": "We always listen to customer feedback to improve our services.",
+    "testimonials": [
+      {
+        "name": "Nguyễn Văn A",
+        "from": "Hanoi",
+        "feedback": "Great service, professional and friendly staff."
+      },
+      {
+        "name": "Trần Thị B",
+        "from": "Da Nang",
+        "feedback": "I was very satisfied with the basic massage package, felt more relaxed than ever."
+      },
+      {
+        "name": "Lê Văn C",
+        "from": "Ho Chi Minh City",
+        "feedback": "The premium package was really worth it, I will come back again."
+      }
+    ]
+  },
+  "contact": "Contact to book"
+}

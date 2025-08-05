@@ -1,0 +1,98 @@
+{
+  "banner_title": "다낭 마사지",
+  "banner_description": "전문적이고 편안한 홈 마사지 서비스를 경험해보세요.",
+  "book_now": "지금 예약하기",
+  "services": {
+    "title": "서비스",
+    "description": "우리는 전문적인 홈 마사지 패키지를 제공합니다.",
+    "list": [
+      {
+        "title": "전신 마사지",
+        "description": "전신 마사지는 스트레스를 줄이고 혈액 순환을 개선하며 깊은 이완감을 제공합니다.",
+        "image": "service-body.jpg"
+      },
+      {
+        "title": "핫스톤 마사지",
+        "description": "핫스톤은 긴장된 근육을 풀어주고 혈액 순환을 개선하며 깊은 휴식을 제공합니다.",
+        "image": "service-hot-stones.jpg"
+      },
+      {
+        "title": "아로마 마사지",
+        "description": "천연 에센셜 오일을 사용하여 마음을 진정시키고 스트레스를 완화하며 깊은 이완을 유도합니다.",
+        "image": "service-cupping.jpg"
+      }
+    ]
+  },
+  "prices": {
+    "title": "서비스 요금",
+    "description": "유연한 구성의 고품질 서비스를 가장 합리적인 비용으로 제공합니다.",
+    "list": [
+      {
+        "name": "기본 패키지",
+        "items": [
+          {
+            "duration": "60분",
+            "price": "350,000 VND"
+          },
+          {
+            "duration": "90분",
+            "price": "500,000 VND"
+          },
+          {
+            "duration": "120분",
+            "price": "650,000 VND"
+          },
+          {
+            "duration": "핫스톤 추가",
+            "price": "+50,000 VND"
+          },
+          {
+            "duration": "에센셜 오일 추가",
+            "price": "+50,000 VND"
+          }
+        ]
+      },
+      {
+        "name": "프리미엄 패키지",
+        "items": [
+          {
+            "duration": "90분",
+            "price": "500,000 VND"
+          },
+          {
+            "duration": "120분",
+            "price": "800,000 VND"
+          }
+        ],
+        "note": "천연 오일과 에센셜 오일을 활용한 고급 마사지 서비스가 포함되어 있습니다."
+      }
+    ]
+  },
+  "about": {
+    "title": "회사 소개",
+    "description": "우리는 홈 마사지 분야에서 다년간의 경험을 가진 전문 팀입니다. 최고의 휴식과 건강 회복 경험을 제공하겠습니다.",
+    "mission": "우리는 고객이 스트레스를 해소하고 건강을 회복할 수 있도록 고품질 홈 마사지 서비스를 제공하는 것을 사명으로 삼고 있습니다."
+  },
+  "feedbacks": {
+    "title": "고객 후기",
+    "description": "서비스 향상을 위해 항상 고객의 의견에 귀 기울입니다.",
+    "testimonials": [
+      {
+        "name": "Nguyễn Văn A",
+        "from": "하노이",
+        "feedback": "서비스가 훌륭하고 직원들도 전문적이며 친절합니다."
+      },
+      {
+        "name": "Trần Thị B",
+        "from": "다낭",
+        "feedback": "기본 마사지 패키지에 매우 만족했으며, 그 어느 때보다 편안함을 느꼈습니다."
+      },
+      {
+        "name": "Lê Văn C",
+        "from": "호치민시",
+        "feedback": "프리미엄 패키지는 정말 가치 있었습니다. 다시 이용할 예정입니다."
+      }
+    ]
+  },
+  "contact": "예약 문의"
+}
