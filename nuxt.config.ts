@@ -6,6 +6,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: false,
   css: ['~/assets/css/tailwind.css'],
+  modules: ['@nuxtjs/i18n'],
   app: {
     baseURL: process.env.NODE_ENV === 'production' ? '/home-massage-danang/' : '/',
     head: {
@@ -30,4 +31,12 @@ export default defineNuxtConfig({
       tailwindcss(),
     ],
   },
+  i18n: {
+    locales: [
+      { code: 'vi', name: 'Tiếng Việt', file: 'vi.json' },
+      { code: 'en', name: 'English', file: 'en.json' },
+      { code: 'kr', name: '한국어', file: 'kr.json' }
+    ],
+    defaultLocale: 'en'
+  }
 })
