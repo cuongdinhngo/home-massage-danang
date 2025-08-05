@@ -1,22 +1,11 @@
+import tailwindcss from '@tailwindcss/vite';
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
   ssr: false,
   css: ['~/assets/css/tailwind.css'],
-  modules: ['@nuxtjs/tailwindcss'],
-  tailwindcss: {
-    configPath: '~/tailwind.config.js'
-  },
-  experimental: {
-    payloadExtraction: false
-  },
-  nitro: {
-    preset: 'github_pages'
-  },
-  vite: {
-    logLevel: 'error'
-  },
   app: {
     baseURL: process.env.NODE_ENV === 'production' ? '/home-massage-danang/' : '/',
     head: {
@@ -35,5 +24,10 @@ export default defineNuxtConfig({
         }
       ]
     }
+  },
+  vite: {
+    plugins: [
+      tailwindcss(),
+    ],
   },
 })
